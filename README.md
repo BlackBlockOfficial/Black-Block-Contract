@@ -116,4 +116,6 @@ This reserve will serve to maintain the trading cycle.
 <strong>BlackBlock was created with:</strong>
 
 OpenZeppelin Contracts (last updated v4.8.0).
+Uniswap v3-core.
+Uniswap v3-periphery.
 
