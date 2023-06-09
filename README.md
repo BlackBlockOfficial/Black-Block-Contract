@@ -88,7 +88,7 @@ For the sale of 2Bs, the calculation is performed either on the reserve of 500,0
 <strong>Example in case of selling MATIC tokens:</strong><br>
 For the sale of WMATIC, the calculation is performed based on the WMATIC reserve present within BlockLiquidity.
 
-The sales amount will be = (100,000 WMATIC tokens * 35 / 100) = 35,000 WMATIC tokens.
+<code>The sales amount will be = (100,000 WMATIC tokens * 35 / 100) = 35,000 WMATIC tokens.</code>
 
 <strong>Conclusion</strong><br>
 The resulting tokens will be sold via the internal swap mechanism implemented by Gelato
