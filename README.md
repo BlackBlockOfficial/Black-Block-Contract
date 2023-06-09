@@ -22,7 +22,7 @@ And how does BlockLiquidity limit boots and large wallets?
 <strong>Answers</strong><br>
 Monitoring determines the number of tokens to sell through an internal function called Percentage, which calculates the percentage of token sales based on a specified range.
 
-The ranges are as follows:
+<strong>The ranges are as follows:</strong>
 <pre>
     /********************************Percentage*********************************/
 
@@ -53,10 +53,10 @@ The ranges are as follows:
     }
 </pre>
 
-How range is used?
+<strong>How range is used?</strong><br>
 Let's give an example: if the difference between the previous amount and the current one has a value of 500,000,000 tokens, it will fall within range N°3, and the returned percentage will be 15%
 
-How the liquidity difference is calculated?
+<strong>How the liquidity difference is calculated?</strong><br>
 As mentioned earlier, BlockLiquidity monitors the liquidity within the pool, enabling it to determine if the amount of 2Bs (2B tokens) has increased or decreased.
 
 The liquidity difference is calculated by subtracting the previous 2B amount from the current 2B amou
@@ -69,7 +69,7 @@ The obtained amount is then passed to the aforementioned function, which returns
 
 Therefore, the larger the difference between the previous and current 2B amounts, the higher the percentage returned, or vice versa.
 
-Now let's do a more complete example:
+<strong>Now let's do a more complete example:</strong><br>
 Suppose we have an internal reserve in BlockLiquidity of 500,000,000,000 2B tokens and 100,000 WMATIC tokens.
 
 We have liquidity in the pool of 1,000,000,000,000 2B tokens, and a user buys or sells 100,000,000,000 2B tokens on Uniswap.
@@ -80,15 +80,17 @@ This difference is then passed to the percentage function, which in this case re
 
 BlockLiquidity employs different calculation methods for selling based on the specific situation.
 
-Example in case of selling 2B tokens:
+<strong>Example in case of selling 2B tokens:</strong><br>
 For the sale of 2Bs, the calculation is performed either on the reserve of 500,000,000,000 2Bs present in BlockLiquidity or on the amount obtained from the previous calculation (100,000,000,000 2Bs). The function compares the two values and returns the lower value. In this example, the lower value is 100,000,000,000 2Bs.
 
 The sales amount will be = (100,000,000,000 2B tokens * 35 / 100) = 35,000,000,000 2B tokens.
-Example in case of selling MATIC tokens:
+
+<strong>Example in case of selling MATIC tokens:</strong><br>
 For the sale of WMATIC, the calculation is performed based on the WMATIC reserve present within BlockLiquidity.
 
 The sales amount will be = (100,000 WMATIC tokens * 35 / 100) = 35,000 WMATIC tokens.
-Conclusion
+
+<strong>Conclusion</strong><br>
 The resulting tokens will be sold via the internal swap mechanism implemented by Gelato
 
 Technically, what happens is that the system limits excessive price changes, whether upwards or downwards.
