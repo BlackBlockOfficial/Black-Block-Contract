@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IGulliver.sol": "IG"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IGulliver.sol": {
+			"keccak256": "0x7f7b39c2a52da92da82dff3d805b98aa3409dcbdfee0806344c8942d0e60d86f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9f105231042a85982fec4028b002d071e3cddd350081a08b556323ecdb5baf63",
+				"dweb:/ipfs/QmaUuPTJZb211kdWWs99SNrZU1fedcikd1B8w1nsmXqcyy"
+			]
+		}
+	},
+	"version": 1
+}

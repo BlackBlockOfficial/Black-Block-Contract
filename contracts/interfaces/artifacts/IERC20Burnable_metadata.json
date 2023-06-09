@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IGulliverLiquidity.sol": "IERC20Burnable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IGulliverLiquidity.sol": {
+			"keccak256": "0xcbb2c83d1fc5a4265d3e29d5effa25250aa49692ca8e3a41875084628df61d67",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c2d51cad02bd053dc52f8d915993241ed9093f635e84240a8db2dc13dd16212e",
+				"dweb:/ipfs/QmSktJEmkzmLwby8R4ctEqnCfWZHnLXyVoNHV8DGJpSw92"
+			]
+		}
+	},
+	"version": 1
+}

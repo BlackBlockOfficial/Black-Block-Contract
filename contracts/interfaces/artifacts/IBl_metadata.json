@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "burnLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/interfaces/IBlackBlock.sol": "IBl"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IBlackBlock.sol": {
+			"keccak256": "0xec40072ae9646190a467158ef186dcf90fad711013ea9b93937f6c5768e5e752",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c1b545b300fb4db38d85ad588822a0fa88dae9454968c5e41e1e57d251d5372c",
+				"dweb:/ipfs/QmcivrE9J5hAnaraypTQLnum2PyH71VhiLzXXWbndFxkm9"
+			]
+		}
+	},
+	"version": 1
+}
