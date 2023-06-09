@@ -83,7 +83,7 @@ BlockLiquidity employs different calculation methods for selling based on the sp
 <strong>Example in case of selling 2B tokens:</strong><br>
 For the sale of 2Bs, the calculation is performed either on the reserve of 500,000,000,000 2Bs present in BlockLiquidity or on the amount obtained from the previous calculation (100,000,000,000 2Bs). The function compares the two values and returns the lower value. In this example, the lower value is 100,000,000,000 2Bs.
 
-The sales amount will be = (100,000,000,000 2B tokens * 35 / 100) = 35,000,000,000 2B tokens.
+<code>The sales amount will be = (100,000,000,000 2B tokens * 35 / 100) = 35,000,000,000 2B tokens.</code>
 
 <strong>Example in case of selling MATIC tokens:</strong><br>
 For the sale of WMATIC, the calculation is performed based on the WMATIC reserve present within BlockLiquidity.
