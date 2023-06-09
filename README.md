@@ -1,7 +1,7 @@
 # BlackBlockContracts
 Black Block, is a cryptocurrency developed to protect small investors from violent market swings.
 
-SUMMARY DESCRIPTION
+<strong>SUMMARY DESCRIPTION<strong>
 
 BlackBlock Token Contract Composition
 The token was created following openzeppelin standards, so it is an ERC20 with features such as snapshot, burning, and permit, which are common to many other tokens. The contract is ownerless.
@@ -83,3 +83,8 @@ What is the function of Collect?
 The Collect function collects the accumulated earnings and adds them as a reserve within the BlockLiquidity contract.
 
 This reserve will serve to maintain the trading cycle.
+
+BlackBlock was created with:
+
+OpenZeppelin Contracts (last updated v4.8.0).
+
