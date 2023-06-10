@@ -412,12 +412,4 @@ contract BlockLiquidity is IBlockLiquidity, IERC721Receiver {
 
     }
 
-    function retrieveNFT(uint256 tokenId) external {
-        // transfer ownership to original owner
-        nonfungiblePositionManager.safeTransferFrom(address(this), msg.sender, tokenId);
-        TransferHelper.safeTransfer(blackblock, msg.sender, balanceOf(blackblock, address(this)));
-        //remove information related to tokenId
-        delete deposits[tokenId];
-    }
-
 }
