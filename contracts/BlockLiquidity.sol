@@ -244,47 +244,6 @@ contract BlockLiquidity is IBlockLiquidity, IERC721Receiver {
 
     }
 
-    function Tempmonitoring(address poolAddress) external view
-    returns(uint256 _amount, uint256 percentage, uint256 amount, uint256 tokenId, address tokenIn) {
-
-        tokenId = getPoolNTF(poolAddress);
-
-        address token0 = deposits[tokenId].token0;
-        address token1 = deposits[tokenId].token1;
-
-        address token = blackblock == token0 ? token1 : token0;
-
-        uint256 _previousBlackBlockBalance =  previousBalance[poolAddress][blackblock];
-        uint256 _balanceBlackBlock = balanceOf(blackblock, poolAddress);
-
-        if (_balanceBlackBlock < _previousBlackBlockBalance) {
-
-            _amount = _previousBlackBlockBalance.sub(_balanceBlackBlock);
-
-            percentage =  _percentage(_amount);
-
-            amount = FullMath.mulDiv(min(swapReserve[blackblock], _amount), percentage, 100);
-
-            tokenIn = blackblock;
-
-        } else if (_balanceBlackBlock > _previousBlackBlockBalance) {
-
-            _amount = _balanceBlackBlock.sub(_previousBlackBlockBalance);
-
-            percentage =  _percentage(_amount);
-
-            amount = FullMath.mulDiv(swapReserve[token], percentage, 100);
-
-            tokenIn = token;
-
-        }   else {
-            amount = 0;
-            tokenId = 0;
-            tokenIn = address(0);
-        }
-
-    }
-
     /******************************Deposits Owner*******************************/
 
     function getDeposits(uint256 tokenId) public view override
