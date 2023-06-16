@@ -85,19 +85,15 @@ In conclusion, with each purchase of 2Bs on Uniswap, the price tends to rise, im
 
 <strong>What is the swap function for?</strong><br>
 The Swap function is used for token exchange and also triggers the Collect function internally.
-
 It's important to note that when the Swap function exchanges tokens for 2B, the received 2B tokens are burned or destroyed, equivalent to the amount received.
-
 This process reduces the circulating supply of 2Bs and tends to increase the price.
-
 It's important to clarify that not only BlockLiquidity can burn the tokens.
 
-<strong>COLLECT FUNCTION</strong>
+<h2>COLLECT FUNCTION</h2>
 
-What is the function of Collect?
-The Collect function collects the accumulated earnings and adds them as a reserve within the BlockLiquidity contract.
-
-This reserve will serve to maintain the trading cycle.
+<strong>What is the function of Collect?</strong><br>
+The Collect function gathers the profits obtained from the trade on the liquidity transferred to BlockLiquidity and allocates them as a reserve within the BlockLiquidity contract.
+This reserve is intended to sustain the trading cycle.
 
 <strong>BlackBlock was created with:</strong>
 
