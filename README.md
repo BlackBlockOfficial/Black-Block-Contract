@@ -3,13 +3,13 @@
 <br>
 <h2>SUMMARY DESCRIPTION</h2>
 
-BlackBlock Contract Composition<br>
+<strong>BlackBlock Contract Composition</strong><br>
 The token was created following openzeppelin standards, so it is an ERC20 with features such as snapshot, burning, and permit, which are common to many other tokens.
 
-BlockLiquidity Contract Composition<br>
+<strong>BlockLiquidity Contract Composition</strong><br>
 The BlockLiquidity Contract was created using the Uniswap v3 interface and libraries, along with some openzeppelin contracts like SafeMath. BlockLiquidity is based on two main elements: 2B Token (BlackBlock) and liquidity (tokenID) created on Uniswap V3. The liquidity contract has three main functions: Monitoring, Swap, and Collect.
 
-<strong>MONITORING FUNCTION</strong>
+<h2>MONITORING FUNCTION</h2>
 
 Introduction
 The Monitoring function is crucial for the liquidity of BlackBlock as it assesses the behavior of the 2B tokens within the pools. If the amount of 2B tokens decreases in the pool, it indicates that the token has been bought. Conversely, if the amount increases, it signifies that the token has been sold. For instance, if the liquidity pool comprises WMATIC+2B and the 2B token is purchased on Uniswap, the Monitoring function will provide the amount, tokenId or (NTF), and the address of 2B. This will trigger the sale of 2B via the internal Swap function and result in obtaining WMATIC, causing a decrease in the price of 2B. Similarly, if the 2B token is sold on Uniswap, the Monitoring function will provide the amount, tokenId or (NTF), and the address of WMATIC. This will initiate the sale of WMATIC through the internal Swap function and lead to the acquisition of 2B, causing an increase in the price of 2B. The parameters returned by Monitoring, such as amount, tokenId, and tokenIn, are determined automatically and cannot be influenced in any way.
