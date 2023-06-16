@@ -1,5 +1,5 @@
 # ![image](https://github.com/BlackBlockOfficial/BlackBlockContract/assets/136055194/8b0c8ba7-77df-4e62-94b9-0eda252da786) BlackBlockContracts
-<h2>Black Block, is a cryptocurrency developed to protect small investors from violent market swings.</h2>
+<h1>Black Block, is a cryptocurrency developed to protect small investors from violent market swings.</h1>
 <br>
 <h2>SUMMARY DESCRIPTION</h2>
 
