@@ -95,7 +95,7 @@ It's important to clarify that not only BlockLiquidity can burn the tokens.
 The Collect function gathers the profits obtained from the trade on the liquidity transferred to BlockLiquidity and allocates them as a reserve within the BlockLiquidity contract.
 This reserve is intended to sustain the trading cycle.
 
-<strong>BlackBlock was created with:</strong>
+<h2>BlackBlock was created with:</h2>
 
 OpenZeppelin Contracts (last updated v4.8.0).
 <br>
