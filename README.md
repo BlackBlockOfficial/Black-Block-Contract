@@ -83,14 +83,14 @@ In conclusion, with each purchase of 2Bs on Uniswap, the price tends to rise, im
 
 <h2>SWAP FUNCTION</h2>
 
-What is the swap function for?
+<strong>What is the swap function for?</strong><br>
 The Swap function is used for token exchange and also triggers the Collect function internally.
 
 It's important to note that when the Swap function exchanges tokens for 2B, the received 2B tokens are burned or destroyed, equivalent to the amount received.
 
 This process reduces the circulating supply of 2Bs and tends to increase the price.
 
-It's important to clarify that only BlockLiquidity can burn the tokens.
+It's important to clarify that not only BlockLiquidity can burn the tokens.
 
 <strong>COLLECT FUNCTION</strong>
 
