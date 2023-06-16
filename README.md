@@ -52,31 +52,22 @@ Monitoring determines the number of tokens to sell through an internal function 
 Let's give an example: if the difference between the previous amount and the current one has a value of 500,000,000 tokens, it will fall within range N°3, and the returned percentage will be 15%
 
 <strong>How the liquidity difference is calculated?</strong><br>
-As mentioned earlier, BlockLiquidity monitors the liquidity within the pool, enabling it to determine if the amount of 2Bs (2B tokens) has increased or decreased.
-
-The liquidity difference is calculated by subtracting the previous 2B amount from the current 2B amou
-
+As mentioned earlier, BlockLiquidity monitors the liquidity within the pool, enabling it to determine if the amount of 2B has increased or decreased.
+The liquidity difference is calculated by subtracting the previous 2B amount from the current 2B amount
 If the 2B amount has decreased within the pool, the calculation is as follows: previous 2B - current 2B = amount (BlockLiquidity will sell 2B).
-
 If the 2B amount has increased within the pool, the calculation is as follows: current 2B - previous 2B = amount (BlockLiquidity will sell WMATIC).
-
 The obtained amount is then passed to the aforementioned function, which returns the corresponding percentage..
-
 Therefore, the larger the difference between the previous and current 2B amounts, the higher the percentage returned, or vice versa.
 
 <strong>Now let's do a more complete example:</strong><br>
 Suppose we have an internal reserve in BlockLiquidity of 500,000,000,000 2B tokens and 100,000 WMATIC tokens.
-
-We have liquidity in the pool of 1,000,000,000,000 2B tokens, and a user buys or sells 100,000,000,000 2B tokens on Uniswap.
-
+We have liquidity in the pool of 1,000,000,000,000 2B tokens, and a user buys 100,000,000,000 2B tokens on Uniswap.
 BlockLiquidity will compare the previous amount in the pool (1,000,000,000,000 2B tokens) with the new amount (900,000,000,000 2B tokens), resulting in a difference of 100,000,000,000 2B tokens.
-
 This difference is then passed to the percentage function, which in this case returns the percentage within range N°8, which is equal to 35%.
-
 BlockLiquidity employs different calculation methods for selling based on the specific situation.
 
 <strong>Example in case of selling 2B tokens:</strong><br>
-For the sale of 2Bs, the calculation is performed either on the reserve of 500,000,000,000 2Bs present in BlockLiquidity or on the amount obtained from the previous calculation (100,000,000,000 2Bs). The function compares the two values and returns the lower value. In this example, the lower value is 100,000,000,000 2Bs.
+For the sale of 2Bs, the calculation is performed either on the reserve of 500,000,000,000 2Bs present in BlockLiquidity or on the amount obtained from the previous calculation (100,000,000,000 2Bs). The function compares the two values and returns the lower value. In this example, the lower value is 100,000,000,000 2Bs
 
 <code>The sales amount will be = (100,000,000,000 2B tokens * 35 / 100) = 35,000,000,000 2B tokens.</code>
 
@@ -86,11 +77,9 @@ For the sale of WMATIC, the calculation is performed based on the WMATIC reserve
 <code>The sales amount will be = (100,000 WMATIC tokens * 35 / 100) = 35,000 WMATIC tokens.</code>
 
 <strong>Conclusion</strong><br>
-The resulting tokens will be sold via the internal swap mechanism implemented by Gelato
-
+The resulting tokens will be sold via the internal swap mechanism automated by Gelato
 Technically, what happens is that the system limits excessive price changes, whether upwards or downwards.
-
-In conclusion, with each purchase of 2Bs on Uniswap, the price tends to rise. Immediately after, BlockLiquidity aims to reduce the price slightly. With each sale of 2Bs on Uniswap, the price tends to fall, and BlockLiquidity aims to increase it using the explained mechanism.
+In conclusion, with each purchase of 2Bs on Uniswap, the price tends to rise, immediately after, BlockLiquidity aims to reduce the price slightly. With each sale of 2Bs on Uniswap, the price tends to fall, and BlockLiquidity aims to increase it using the explained mechanism
 
 <strong>SWAP FUNCTION</strong>
 
