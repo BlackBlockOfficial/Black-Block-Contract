@@ -4,7 +4,7 @@
 
 Official link:
 Website: <a>
-Twitter: <a href="https://t.me/blackblockofficial" target="_blank"><i class="fab fa-telegram"></i></a>
+Twitter: <a href="https://t.me/blackblockofficial" target="_blank">@i_m_black_block</a>
 Telegram:
 Discord:
 
