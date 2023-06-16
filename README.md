@@ -7,7 +7,7 @@ Website: <a href="https://blackblock.community" target="_blank">blackblock.commu
 <br>
 Twitter: <a href="https://twitter.com/i_m_black_block" target="_blank">@i_m_black_block</a>
 <br>
-Telegram: <a href="https://t.me/blackblockofficial" target="_blank">blackblockofficial</a>
+Telegram: <a href="https://t.me/i_m_black_block" target="_blank">@i_m_black_block</a>
 <br>
 Discord: <a href="https://discord.gg/mMg45xzDG5" target="_blank">BlackBlock</a>
 <br>
