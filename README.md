@@ -3,11 +3,11 @@
 <br>
 <strong>SUMMARY DESCRIPTION</strong>
 
-BlackBlock Token Contract Composition
+BlackBlock Contract Composition<br>
 The token was created following openzeppelin standards, so it is an ERC20 with features such as snapshot, burning, and permit, which are common to many other tokens.
 
-BlockLiquidity Contract Composition
-The BlockLiquidity Contract was created using the Uniswap v3 interface and libraries, along with some openzeppelin contracts like SafeMath. BlockLiquidity is based on two main elements: 2B Token (BlackBlock) and liquidity (NTF or tokenID) created on Uniswap V3. The liquidity contract has three main functions: Monitoring, Swap, and Collect.
+BlockLiquidity Contract Composition<br>
+The BlockLiquidity Contract was created using the Uniswap v3 interface and libraries, along with some openzeppelin contracts like SafeMath. BlockLiquidity is based on two main elements: 2B Token (BlackBlock) and liquidity (tokenID) created on Uniswap V3. The liquidity contract has three main functions: Monitoring, Swap, and Collect.
 
 <strong>MONITORING FUNCTION</strong>
 
