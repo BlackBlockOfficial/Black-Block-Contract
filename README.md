@@ -2,7 +2,7 @@
 <h3>Black Block, is a cryptocurrency developed to protect small investors from violent market swings.</h3>
 <br>
 
-Official link:
+<h2>Official link:</h2>
 <br>
 Website: <a href="https://blackblock.community" target="_blank">blackblock.community</a>
 <br>
