@@ -3,10 +3,14 @@
 <br>
 
 Official link:
-Website: <a>
-Twitter: <a href="https://t.me/blackblockofficial" target="_blank">@i_m_black_block</a>
-Telegram:
-Discord:
+<br>
+Website: <a href="https://blackblock.community" target="_blank">blackblock.community</a>
+<br>
+Twitter: <a href="https://twitter.com/i_m_black_block" target="_blank">@i_m_black_block</a>
+<br>
+Telegram: <a href="https://t.me/blackblockofficial" target="_blank">blackblockofficial</a>
+<br>
+Discord: <a href="https://discord.gg/mMg45xzDG5" target="_blank">BlackBlock</a>
 
 <br>
 
