@@ -3,7 +3,7 @@
 <br>
 
 <h2>Official link:</h2>
-<br>
+
 Website: <a href="https://blackblock.community" target="_blank">blackblock.community</a>
 <br>
 Twitter: <a href="https://twitter.com/i_m_black_block" target="_blank">@i_m_black_block</a>
