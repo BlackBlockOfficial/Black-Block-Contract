@@ -81,7 +81,7 @@ The resulting tokens will be sold via the internal swap mechanism automated by G
 Technically, what happens is that the system limits excessive price changes, whether upwards or downwards.
 In conclusion, with each purchase of 2Bs on Uniswap, the price tends to rise, immediately after, BlockLiquidity aims to reduce the price slightly. With each sale of 2Bs on Uniswap, the price tends to fall, and BlockLiquidity aims to increase it using the explained mechanism
 
-<strong>SWAP FUNCTION</strong>
+<h2>SWAP FUNCTION</h2>
 
 What is the swap function for?
 The Swap function is used for token exchange and also triggers the Collect function internally.
