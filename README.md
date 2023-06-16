@@ -16,7 +16,6 @@ The Monitoring function is crucial for the liquidity of BlackBlock as it assesse
 
 <strong>Questions</strong><br>
 How does Monitoring decide how many tokens to sell?
-
 And how does BlockLiquidity limit boots and large wallets?
 
 <strong>Answers</strong><br>
@@ -26,31 +25,27 @@ Monitoring determines the number of tokens to sell through an internal function 
 <pre>
     /********************************Percentage*********************************/
 
-    function _percentage(uint256 amount) internal pure returns(uint8 percentage) {
-
-        if (amount < 100000000e18) {
-            percentage = 0;
-        } else if (amount >= 100000000e18 && amount < 500000000e18) {
-            percentage = 5;
-        } else if (amount >= 500000000e18 && amount < 1000000000e18) {
-            percentage = 10;
-        } else if (amount >= 1000000000e18 && amount < 5000000000e18) {
-            percentage = 15;
-        } else if (amount >= 5000000000e18 && amount < 10000000000e18) {
-            percentage = 20;
-        } else if (amount >= 10000000000e18 && amount < 50000000000e18) {
-            percentage = 25;
-        } else if (amount >= 50000000000e18 && amount < 100000000000e18) {
-            percentage = 30;
-        } else if (amount >= 100000000000e18 && amount < 500000000000e18) {
-            percentage = 35;
-        } else if (amount >= 500000000000e18 && amount < 1000000000000e18) {
-            percentage = 40;
-        } else {
-            percentage = 45;
-        }
-
-    }
+    Range: amount  100,000,000
+    Percentage: 1%
+    Range: amount  100,000,000 && amount  500,000,000
+    Percentage: 5%
+    Range: amount  500,000,000 && amount  1,000,000,000
+    Percentage: 10%
+    Range: amount  1,000,000,000 && amount  5,000,000,000
+    Percentage: 15%
+    Range: amount  5,000,000,000 && amount  10,000,000,000
+    Percentage: 20%
+    Range: amount  10,000,000,000 && amount  50,000,000,000
+    Percentage: 25%
+    Range: amount  50,000,000,000 && amount  100,000,000,000
+    Percentage: 30%
+    Range: amount  100,000,000,000 && amount  500,000,000,000
+    Percentage: 35%
+    Range: amount  500,000,000,000 && amount  1,000,000,000,000
+    Percentage: 40%
+    Range: amount  1,000,000,000,000
+    Percentage: 45%
+    
 </pre>
 
 <strong>How range is used?</strong><br>
