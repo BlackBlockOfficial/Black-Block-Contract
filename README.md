@@ -106,6 +106,15 @@ It's important to clarify that not only BlockLiquidity can burn the tokens.
 The Collect function gathers the profits obtained from the trade on the liquidity transferred to BlockLiquidity and allocates them as a reserve within the BlockLiquidity contract.
 This reserve is intended to sustain the trading cycle.
 
+<h2>LOCK LIQUIDITY FUNCTION</h2>
+
+<strong>What is the function of lockLiquidity?</strong><br>
+This function is designed to assure supporters, especially those who support Black Block, that the transferred liquidity cannot be withdrawn.
+The liquidity transferred to the contract through the lockLiquidity function is in no way withdrawable.
+This function should only be used if you understand how this smart contract works.
+Using this function is equivalent to burning your capital.
+The use of this function does not bring any personal benefit.
+
 <h2>BlackBlock was created with:</h2>
 
 OpenZeppelin Contracts (last updated v4.8.0).
